@@ -1,0 +1,30 @@
+{
+  "name": "pixi-project",
+  "version": "0.2.0",
+  "description": "Pixi.js project boiler plate using TypeScript, Webpack and Mocha",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "dev@damary",
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "babel-loader": "^8.4.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
+    "mocha": "^7.1.1",
+    "mocha-loader": "^5.0.0",
+    "ts-loader": "^8.4.0",
+    "typescript": "^5.4.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@pixi/assets": "^7.4.3",
+    "@pixi/filter-blur": "^7.4.3",
+    "pixi.js": "^7.4.3"
+  }
+}

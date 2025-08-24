@@ -1,0 +1,1013 @@
+@ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/events/lib/EventSystem.mjs 320:0-10
+Can't import the named export 'extensions' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/events/lib/index.mjs
+ @ ./node_modules/@pixi/accessibility/lib/AccessibilityManager.js
+ @ ./node_modules/@pixi/accessibility/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/url.mjs 14:96-102
+Can't import the named export 'format' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/geometry/Geometry.mjs 188:84-97
+Can't import the named export 'getBufferType' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchGeometry.mjs
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/geometry/utils/interleaveTypedArrays.mjs 19:13-26
+Can't import the named export 'getBufferType' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/geometry/Geometry.mjs
+ @ ./node_modules/@pixi/core/lib/batch/BatchGeometry.mjs
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/Texture.mjs 208:105-123
+Can't import the named export 'getResolutionOfUrl' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/Texture.mjs 269:22-40
+Can't import the named export 'getResolutionOfUrl' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:17-24
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:37-44
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:70-77
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:110-117
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:139-146
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:183-190
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:223-230
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:252-259
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:296-303
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:336-343
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:365-372
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:409-416
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureUvs.mjs 30:449-456
+Can't import the named export 'groupD8' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/shader/Program.mjs 73:36-44
+Can't import the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/maxRecommendedTextures.mjs 5:6-14
+Can't import the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/maxRecommendedTextures.mjs 5:25-33
+Can't import the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/maxRecommendedTextures.mjs 6:8-16
+Can't import the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/maxRecommendedTextures.mjs 10:8-16
+Can't import the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/canUploadSameBuffer.mjs 3:10-18
+Can't import the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/BaseTexture.mjs 167:28-34
+Can't import the named export 'isPow2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/BaseTexture.mjs 167:54-60
+Can't import the named export 'isPow2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/Renderer.mjs 275:82-98
+Can't import the named export 'isWebGLSupported' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs 247:27-31
+Can't import the named export 'log2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs 263:27-31
+Can't import the named export 'log2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs 246:22-30
+Can't import the named export 'nextPow2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs 262:22-30
+Can't import the named export 'nextPow2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/renderTexture/RenderTexturePool.mjs 52:245-253
+Can't import the named export 'nextPow2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/renderTexture/RenderTexturePool.mjs 52:277-285
+Can't import the named export 'nextPow2' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/url.mjs 8:95-100
+Can't import the named export 'parse' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs 170:28-48
+Can't import the named export 'premultiplyBlendMode' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/TextureSystem.mjs 144:20-31
+Can't import the named export 'removeItems' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/systems.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/url.mjs 20:97-104
+Can't import the named export 'resolve' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/settings.mjs 4:24-32
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 26:758-766
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 65:25-33
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 95:25-33
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/settings.mjs 20:0-8
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/settings.mjs 21:0-8
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/settings.mjs 22:0-8
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/settings.mjs 23:24-32
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/resources/SVGResource.mjs 32:70-78
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/resources/ImageResource.mjs 38:361-369
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/resources/ImageBitmapResource.mjs 58:23-31
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/resources/ImageBitmapResource.mjs 152:166-174
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/view/ViewSystem.mjs 22:103-111
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/view/ViewSystem.mjs 22:176-184
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/context/ContextSystem.mjs 89:10-18
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/BaseTexture.mjs 66:170-178
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/BaseTexture.mjs 252:89-97
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs 94:6-14
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/TextMetrics.mjs 56:22-30
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/TextMetrics.mjs 383:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/TextMetrics.mjs 385:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/Text.mjs 38:26-34
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/Text.mjs 43:152-160
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/mesh/lib/Mesh.mjs 34:338-346
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/mesh/lib/index.mjs
+ @ ./node_modules/@pixi/mesh-extras/lib/geometry/PlaneGeometry.js
+ @ ./node_modules/@pixi/mesh-extras/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/mesh/lib/Mesh.mjs 196:27-35
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/mesh/lib/index.mjs
+ @ ./node_modules/@pixi/mesh-extras/lib/geometry/PlaneGeometry.js
+ @ ./node_modules/@pixi/mesh-extras/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/resolver/parsers/resolveTextureUrl.mjs 10:80-88
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadVideo.mjs 42:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadTextures.mjs 29:17-25
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadSVG.mjs 63:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/loadWebFont.mjs 65:20-28
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/loadWebFont.mjs 101:13-21
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/loadTxt.mjs 26:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/loadJson.mjs 26:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/batch/maxRecommendedTextures.mjs 4:18-26
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/batch/BatchRenderer.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/ticker/lib/settings.mjs 5:24-32
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/ticker/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/settings.mjs 3:0-8
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/settings.mjs 4:0-8
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/network/getResolutionOfUrl.mjs 6:44-52
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/media/CanvasRenderTarget.mjs 16:19-27
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/media/CanvasRenderTarget.mjs 16:131-139
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/shader/utils/getTestContext.mjs 8:17-25
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/shader/utils/getMaxFragmentPrecision.mjs
+ @ ./node_modules/@pixi/core/lib/shader/Program.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/shader/utils/getTestContext.mjs 10:4-12
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/shader/utils/getMaxFragmentPrecision.mjs
+ @ ./node_modules/@pixi/core/lib/shader/Program.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/browser/isWebGLSupported.mjs 9:36-44
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/browser/isWebGLSupported.mjs 13:11-19
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/browser/isWebGLSupported.mjs 14:19-27
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/path.mjs 105:116-124
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/mask/StencilSystem.mjs 24:73-81
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/systems.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/mask/ScissorSystem.mjs 27:77-85
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/systems.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/geometry/GeometrySystem.mjs 30:8-16
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/systems.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/framebuffer/FramebufferSystem.mjs 31:8-16
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/systems.mjs
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/Texture.mjs 190:87-95
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/Texture.mjs 320:21-29
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/Renderer.mjs 31:104-112
+Can't import the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/resources/SVGResource.mjs 67:88-91
+Can't import the named export 'uid' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/BaseTexture.mjs 66:580-583
+Can't import the named export 'uid' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/BaseTexture.mjs 258:59-62
+Can't import the named export 'uid' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/settings.mjs
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/Texture.mjs 196:57-60
+Can't import the named export 'uid' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/core/lib/textures/Texture.mjs 202:58-61
+Can't import the named export 'uid' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-global-position/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/pixi.js/lib/filters.mjs 62:13-18
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/settings.mjs 19:6-11
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/DisplayObject.mjs 439:2-7
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 34:117-122
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 34:217-222
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 194:14-19
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/sprite/lib/Sprite.mjs 204:14-19
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/sprite/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-cache-as-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/Container.mjs 102:6-11
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/settings.mjs
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/Container.mjs 127:61-66
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/settings.mjs
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/Container.mjs 140:66-71
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/settings.mjs
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/Text.mjs 131:24-29
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/Text.mjs 259:16-21
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/Text.mjs 270:16-21
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/text/lib/Text.mjs 317:8-13
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/text/lib/index.mjs
+ @ ./node_modules/@pixi/text-bitmap/lib/BitmapFont.js
+ @ ./node_modules/@pixi/text-bitmap/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/utils/checkExtension.mjs 4:10-15
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/resolver/parsers/resolveTextureUrl.mjs 11:14-19
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadVideo.mjs 66:21-26
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadVideo.mjs 69:20-25
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadTextures.mjs 120:143-148
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/textures/loadSVG.mjs 50:28-33
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/loadWebFont.mjs 23:12-17
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/parsers/loadWebFont.mjs 24:17-22
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/Assets.mjs 657:6-11
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/resolver/Resolver.mjs 263:95-100
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/Assets.mjs
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/resolver/Resolver.mjs 480:73-78
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/Assets.mjs
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/resolver/Resolver.mjs 480:741-746
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/Assets.mjs
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/Loader.mjs 153:30-35
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/Assets.mjs
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/assets/lib/loader/Loader.mjs 224:30-35
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/assets/lib/Assets.mjs
+ @ ./node_modules/@pixi/assets/lib/index.mjs
+ @ ./node_modules/@pixi/compressed-textures/lib/loaders/loadDDS.js
+ @ ./node_modules/@pixi/compressed-textures/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/events/lib/EventBoundary.mjs 22:24-29
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/events/lib/index.mjs
+ @ ./node_modules/@pixi/accessibility/lib/AccessibilityManager.js
+ @ ./node_modules/@pixi/accessibility/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/events/lib/FederatedEventTarget.mjs 353:4-9
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/events/lib/index.mjs
+ @ ./node_modules/@pixi/accessibility/lib/AccessibilityManager.js
+ @ ./node_modules/@pixi/accessibility/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/graphics/lib/utils/buildPoly.mjs 40:22-27
+Can't import the named export 'utils' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/graphics/lib/index.mjs
+ @ ./node_modules/@pixi/prepare/lib/Prepare.js
+ @ ./node_modules/@pixi/prepare/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/index.mjs 30:0-622
+Can't reexport the named export 'isMobile' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/display/lib/settings.mjs 23:0-33
+Can't reexport the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/display/lib/index.mjs
+ @ ./node_modules/@pixi/mixin-get-child-by-name/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/ticker/lib/settings.mjs 24:0-33
+Can't reexport the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/ticker/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+
+ERROR in ./node_modules/@pixi/utils/lib/settings.mjs 5:0-33
+Can't reexport the named export 'settings' from non EcmaScript module (only default export is available)
+ @ ./node_modules/@pixi/utils/lib/index.mjs
+ @ ./node_modules/@pixi/core/lib/index.js
+ @ ./node_modules/pixi.js/lib/index.mjs
+ @ ./src/scripts/app.ts
+ℹ ｢wdm｣: Failed to compile.
