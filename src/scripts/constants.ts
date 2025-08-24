@@ -1,5 +1,4 @@
-// constants.ts
-
+// Constants hold all configuration values
 // Layout
 export const COLS = 5;
 export const ROWS = 5;

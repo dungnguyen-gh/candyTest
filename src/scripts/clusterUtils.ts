@@ -23,29 +23,47 @@ export function findClusters(grid: string[][], minSize = 4): Cluster[] {
       const base = grid[r][c];
       if (base === WILD) continue; // wild cannot start
 
+      // temporary tracking
       const stack: [number, number][] = [[r, c]];
       const cells: [number, number][] = [];
-      visited[r][c] = true; // only the base type is visited
+      const wildCells: [number, number][] = [];
+      const tempVisited: boolean[][] = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
+      let baseCount = 0;
+
+      tempVisited[r][c] = true;
 
       while (stack.length) {
         const [cr, cc] = stack.pop()!;
-        cells.push([cr, cc]);
+        const t = grid[cr][cc];
+
+        if (t === base) {
+          cells.push([cr, cc]);
+          baseCount++;
+        } else if (t === WILD) {
+          wildCells.push([cr, cc]);
+        }
 
         for (const [dr, dc] of dirs) {
           const nr = cr + dr, nc = cc + dc;
           if (!inBounds(nr, nc)) continue;
-          if (visited[nr][nc] && grid[nr][nc] !== WILD) continue;
+          if (tempVisited[nr][nc] || visited[nr][nc]) continue;
 
-          const t = grid[nr][nc];
-          if (t === base || t === WILD) {
-            if (t !== WILD) visited[nr][nc] = true;
+          const nt = grid[nr][nc];
+          if (nt === base || nt === WILD) {
+            tempVisited[nr][nc] = true;
             stack.push([nr, nc]);
           }
         }
       }
 
-      if (cells.length >= minSize) {
-        clusters.push({ type: base, cells });
+      // validate
+      const clusterSize = cells.length + wildCells.length;
+      if (clusterSize >= minSize && baseCount > 0) {
+        const fullCluster = [...cells, ...wildCells];
+        clusters.push({ type: base, cells: fullCluster });
+
+        // now commit visited globally
+        for (const [rr, cc] of fullCluster) visited[rr][cc] = true;
       }
     }
   }
