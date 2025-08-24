@@ -1,4 +1,5 @@
 // Server.ts
+
 import { COLS, ROWS, SYMBOL_TYPES, WILD } from './constants';
 import { findClusters } from './clusterUtils';
 
@@ -11,26 +12,22 @@ export default class Server {
 
   /** random weighted type (less K) */
   private randType(): string {
-    if (Math.random() < 0.1) return WILD; // 10% chance
-
-    // pick from non-wild types equally
+    const isWild = Math.random() < 0.1; // 10% chance
+    if (isWild) return WILD;
     const nonWilds = SYMBOL_TYPES.filter(s => s !== WILD);
-    return nonWilds[(Math.random() * nonWilds.length) | 0];
+    return nonWilds[Math.floor(Math.random() * nonWilds.length)];
   }
 
-
   private randomMatrix(): string[][] {
-    const m: string[][] = Array.from({length:ROWS},()=>
-        Array(COLS).fill(''));
-    for (let r=0;r<ROWS;r++){
-      for (let c=0;c<COLS;c++){
+    const m: string[][] = Array.from({length:ROWS},()=> Array(COLS).fill(''));
+    for (let r = 0; r < ROWS; r++){
+      for (let c = 0; c < COLS; c++){
         m[r][c] = this.randType();
       }
     }
     return m;
   }
 
-  
   /** Simulates the spec: min 2s spin on FE, server may be late. */
   requestSpinData(): void {
     const delay =
@@ -57,13 +54,13 @@ export default class Server {
     return new Promise(res=>{
       setTimeout(()=>{
         const cols: string[][] = [];
-        for (let c=0;c<COLS;c++){
-          const n = countPerCol[c]||0;
+        for (let c = 0; c < COLS; c++){
+          const n = countPerCol[c] || 0;
           cols[c] = [];
-          for (let i=0;i<n;i++) cols[c].push(this.randType());
+          for (let i = 0; i < n; i++) cols[c].push(this.randType());
         }
         res(cols);
-      }, 120 + Math.random()*200);
+      }, 120 + Math.random() * 200);
     });
   }
 }

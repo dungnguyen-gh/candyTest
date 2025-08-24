@@ -1,4 +1,5 @@
-// utils/tween.ts
+// tween.ts
+
 import { Ticker } from 'pixi.js';
 
 export type Easing = (t:number)=>number;
@@ -6,9 +7,12 @@ export const easeOutCubic: Easing = (t)=>1-Math.pow(1-t,3);
 export const easeInCubic: Easing = (t)=>t*t*t;
 export const linear: Easing = (t)=>t;
 
-// -----------------------------
-// Old callback-based tween (for SymbolView explode/drop)
-// -----------------------------
+/** Small helper so we stop doing setTimeout everywhere */
+export const delay = (ms:number) => new Promise<void>(res => setTimeout(res, ms));
+
+/* ------------------------------------------------------------------ */
+/* 1) Promise-style tween for ad-hoc animations (SymbolView, etc.)    */
+/* ------------------------------------------------------------------ */
 export function tween(
   update:(t:number)=>void,
   durationMs:number,
@@ -29,9 +33,9 @@ export function tween(
   });
 }
 
-// -----------------------------
-// Demo-style tweenTo (for Reel spinning position)
-// -----------------------------
+/* ------------------------------------------------------------------ */
+/* 2) Property tween manager used by reels                            */
+/* ------------------------------------------------------------------ */
 type Tween = {
   object:any;
   property:string;
