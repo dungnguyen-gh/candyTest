@@ -21,14 +21,11 @@ export function findClusters(grid: string[][], minSize = 4): Cluster[] {
     for (let c = 0; c < COLS; c++) {
       if (visited[r][c]) continue;
       const base = grid[r][c];
+      if (base === WILD) continue; // wild cannot start
 
-      // Wild cannot START a cluster (but may be included by neighbors)
-      if (base === WILD) continue;
-
-      // flood fill
       const stack: [number, number][] = [[r, c]];
       const cells: [number, number][] = [];
-      visited[r][c] = true;
+      visited[r][c] = true; // only the base type is visited
 
       while (stack.length) {
         const [cr, cc] = stack.pop()!;
@@ -36,10 +33,12 @@ export function findClusters(grid: string[][], minSize = 4): Cluster[] {
 
         for (const [dr, dc] of dirs) {
           const nr = cr + dr, nc = cc + dc;
-          if (!inBounds(nr, nc) || visited[nr][nc]) continue;
+          if (!inBounds(nr, nc)) continue;
+          if (visited[nr][nc] && grid[nr][nc] !== WILD) continue;
+
           const t = grid[nr][nc];
           if (t === base || t === WILD) {
-            visited[nr][nc] = true;
+            if (t !== WILD) visited[nr][nc] = true;
             stack.push([nr, nc]);
           }
         }
