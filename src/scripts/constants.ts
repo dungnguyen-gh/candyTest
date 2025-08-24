@@ -22,4 +22,4 @@ export const DROP_MS = 420;
 
 export const USE_POOL = true;
 
-export const DEBUG_UI = true;
+export const DEBUG_UI = false;

@@ -1,5 +1,4 @@
 // Board.ts
-
 import { Container, Text, TextStyle, Texture } from 'pixi.js';
 import { COLS, DEBUG_UI, REEL_STAGGER_MS, ROWS } from './constants';
 import { Reel } from './Reel';

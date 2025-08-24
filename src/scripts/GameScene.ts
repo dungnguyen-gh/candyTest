@@ -1,5 +1,4 @@
 // GameScene.ts
-
 import { Application, Assets, Container, Sprite, Text, TextStyle, Texture } from 'pixi.js';
 import { APP_HEIGHT, APP_WIDTH, COLS, MIN_SPIN_MS, ROWS, SYMBOL_TYPES } from './constants';
 import Server from './Server';

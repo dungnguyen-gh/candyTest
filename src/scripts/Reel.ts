@@ -1,5 +1,4 @@
-// Reel.ts
-
+// Reel.ts (fixed refill issue)
 import { BlurFilter, Container, Graphics, Texture, Ticker } from 'pixi.js';
 import { BOARD_TOP, COLS, DROP_MS, SYMBOL_H, SYMBOL_W, USE_POOL } from './constants';
 import { SymbolView } from './SymbolView';
@@ -145,13 +144,8 @@ export class Reel extends Container {
 
       tasks.push((async () => {
         await s.explode();
-        // return to pool or destroy
-        if (USE_POOL) {
-          symbolPool.release(s);
-        } else {
-          s.destroy();
-        }
-        this._symbols[r] = undefined; // mark gap in reel
+        // instead of deleting, just hide it
+        s.visible = false;
       })());
     }
 
@@ -160,39 +154,30 @@ export class Reel extends Container {
   }
 
   async dropAndRefill(refillTypes: string[]): Promise<void> {
-    
-    // symbols are not exploded and never pooled
-    const survivors: { s: SymbolView; row: number }[] = [];
-
-    // collect survivors
+    // gather survivors
+    const survivors: SymbolView[] = [];
     for (let r = 0; r < this._rows; r++) {
       const s = this._symbols[r];
-      if (s && s.visible) {
-        survivors.push({ s, row: r });
-      }
+      if (s && s.visible) survivors.push(s);
     }
 
-    // missing symbols
     const missing = this._rows - survivors.length;
     const newOnTop: SymbolView[] = [];
 
-    // create new symbols for missing
     for (let i = 0; i < missing; i++) {
       const type = refillTypes[i];
       const sv = USE_POOL
         ? symbolPool.get(type, this.textures[type])
         : new SymbolView(type, this.textures[type]);
       sv.x = 0;
-      sv.y = -(i + 1) * SYMBOL_H; // spawn above reel
+      sv.y = -(i + 1) * SYMBOL_H;
       this.addChild(sv);
-      newOnTop.unshift(sv); // stack so first goes on top
+      newOnTop.unshift(sv);
     }
 
-    // rebuild column (new ones at top, then survivors in order)
-    const newColumn = [...newOnTop, ...survivors.map(x => x.s)];
+    const newColumn = [...newOnTop, ...survivors];
     this._symbols = new Array(this._rows);
 
-    // animate drop
     const drops: Promise<void>[] = [];
     newColumn.forEach((s, row) => {
       this._symbols[row] = s;
