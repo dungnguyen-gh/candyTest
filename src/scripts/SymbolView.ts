@@ -12,14 +12,14 @@ export class SymbolView extends Container {
     super();
     this.type = type;
 
-    // sprite
+    // sprite centered inside symbol box
     this._sprite = new Sprite(texture);
     this._sprite.anchor.set(0.5);
     this._sprite.x = SYMBOL_W * 0.5;
     this._sprite.y = SYMBOL_H * 0.5;
     this.addChild(this._sprite);
 
-    // highlight border (thicker)
+    // highlight border (hidden by default)
     this._highlight = new Graphics();
     this._highlight.lineStyle(10, 0xffff00);
     this._highlight.drawRect(0, 0, SYMBOL_W, SYMBOL_H);
@@ -31,6 +31,16 @@ export class SymbolView extends Container {
   setTexture(type: string, texture: Texture) {
     this.type = type;
     this._sprite.texture = texture;
+
+    // fully reset inner-sprite visual state
+    this._sprite.alpha = 1;
+    this._sprite.scale.set(1);
+
+    // also ensure container-level visual state
+    this.visible = true;
+    this.alpha = 1;
+    this.scale.set(1);
+    this.setHighlight(false);
   }
 
   setHighlight(on: boolean) {
@@ -43,18 +53,14 @@ export class SymbolView extends Container {
 
   private async animateHighlightExplosion(): Promise<void> {
     const h = this._highlight;
-    // expand + fade highlight while keeping sprite intact
     await tween((t) => {
       const k = easeOutCubic(t);
-      h.scale.set(1 + k * 2); // pop outward
+      h.scale.set(1 + k * 1.6); // pop out
       h.alpha = 1 - k;
     }, EXPLODE_MS);
   }
 
-  /**
-   * Explode animation: highlight pops out (visual), sprite shrinks & fades.
-   * Note: this.visible will be set false at the end, caller should recycle/destroy.
-   */
+  // Explode animation: highlight pops out (visual), sprite shrinks & fades
   async explode(): Promise<void> {
     const highlightP = this._highlight.visible ? this.animateHighlightExplosion() : Promise.resolve();
 
@@ -66,7 +72,7 @@ export class SymbolView extends Container {
 
     await Promise.all([highlightP, spriteP]);
 
-    // cleanup state; caller should remove/release this instance
+    // final cleanup visual state
     this._highlight.visible = false;
     this.visible = false;
   }

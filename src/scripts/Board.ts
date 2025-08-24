@@ -59,7 +59,7 @@ export class Board extends Container {
     const m: string[][] = Array.from({ length: ROWS }, () => Array(COLS).fill(''));
     for (let r = 0; r < ROWS; r++) {
       for (let c = 0; c < COLS; c++) {
-        m[r][c] = this.reels[c].getTypeAt(r);
+        m[r][c] = this.reels[c].getTypeAt(r); // getTypeAt make sure visibility
       }
     }
     return m;
@@ -73,7 +73,7 @@ export class Board extends Container {
     for (const reel of this.reels) {
       for (let r = 0; r < ROWS; r++) {
         const s = reel.getSymbolAt(r);
-        if (s) s.setHighlight(false);
+        if (s && s.visible) s.setHighlight(false);
       }
     }
   }
@@ -85,7 +85,7 @@ export class Board extends Container {
     for (const cl of clusters) {
       for (const [r, c] of cl.cells) {
         const s = this.reels[c].getSymbolAt(r);
-        if (s) s.setHighlight(true);
+        if (s && s.visible) s.setHighlight(true);
       }
     }
 

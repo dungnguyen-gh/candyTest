@@ -1,4 +1,4 @@
-// Reel.ts (fixed refill issue)
+// Reel.ts
 import { BlurFilter, Container, Graphics, Texture, Ticker } from 'pixi.js';
 import { BOARD_TOP, COLS, DROP_MS, SYMBOL_H, SYMBOL_W, USE_POOL } from './constants';
 import { SymbolView } from './SymbolView';
@@ -6,7 +6,7 @@ import { tweenTo, backout } from './utils/tween';
 import { symbolPool } from './SymbolPool';
 
 type TextureMap = Record<string, Texture>;
-type ReelState = 'idle' | 'spinning' | 'stopping';
+type ReelState = 'idle' | 'spinning' | 'stopping'; // manage reel state
 
 export class Reel extends Container {
   public index: number;
@@ -34,7 +34,7 @@ export class Reel extends Container {
     this.x = ((COLS * SYMBOL_W) >= 900 ? (900 - COLS * SYMBOL_W) / 2 : 0) + index * SYMBOL_W;
     this.y = BOARD_TOP;
 
-    // mask
+    // mask for visible window
     const mask = new Graphics();
     mask.beginFill(0x000000);
     mask.drawRect(0, 0, SYMBOL_W, rows * SYMBOL_H);
@@ -53,6 +53,7 @@ export class Reel extends Container {
       this.addChild(sv);
     }
 
+    // bind update
     Ticker.shared.add(this.update, this);
   }
 
@@ -128,62 +129,126 @@ export class Reel extends Container {
           this.state = 'idle';
           resolve();
         });
-      }, this.index * 300);
+      }, this.index * 300); //delay between reels
     });
   }
 
-  getTypeAt(row: number): string { return this._symbols[row]?.type ?? ''; }
-  getSymbolAt(row: number): SymbolView | undefined { return this._symbols[row]; }
+  // Return the type 
+  getTypeAt(row: number): string {
+    const s = this._symbols[row];
+    return (s && s.visible) ? s.type : '';
+  }
 
+  getSymbolAt(row: number): SymbolView | undefined {
+    return this._symbols[row];
+  }
+
+  
+  // Explode the given rows. After animation - release to pool (if enabled) or destroy
   async explodeRows(rowsToExplode: number[]): Promise<number> {
     const tasks: Promise<void>[] = [];
 
     for (const r of rowsToExplode) {
       const s = this._symbols[r];
-      if (!s || !s.visible) continue;
+      if (!s) continue;
 
-      tasks.push((async () => {
-        await s.explode();
-        // instead of deleting, just hide it
-        s.visible = false;
-      })());
+      tasks.push(
+        s.explode().then(() => {
+          // release/destroy and clear slot immediately so board snapshots see it empty
+          if (USE_POOL) {
+            symbolPool.release(s); // return to pool
+          } else {
+            if (s.parent) s.parent.removeChild(s);
+            s.destroy({ children: true, texture: false, baseTexture: false });
+          }
+          this._symbols[r] = undefined; // logical slot
+        })
+      );
     }
 
     await Promise.all(tasks);
     return tasks.length;
   }
 
+
+  /**
+   * Drop and refill — collapse survivors downward (apply gravity)
+   * - survivors are gathered from top to bottom and then placed below newly-created top items
+   * - refillTypes is top-down
+   */
   async dropAndRefill(refillTypes: string[]): Promise<void> {
-    // gather survivors
+    // collect survivors
     const survivors: SymbolView[] = [];
+
     for (let r = 0; r < this._rows; r++) {
       const s = this._symbols[r];
-      if (s && s.visible) survivors.push(s);
+      if (s) {
+        // if a symbol exists but is invisible (exploded but not yet released), release it now
+        if (!s.visible) {
+          if (USE_POOL) symbolPool.release(s);
+          else s.destroy({ children: true, texture: false, baseTexture: false });
+          this._symbols[r] = undefined;
+          continue;
+        }
+        // visible survivor
+        survivors.push(s);
+      }
+      // reassign when composing new column
+      this._symbols[r] = undefined;
     }
-
+    // missing rows
     const missing = this._rows - survivors.length;
     const newOnTop: SymbolView[] = [];
 
+    // create new symbols for missing slots
+    const keys = Object.keys(this.textures);
     for (let i = 0; i < missing; i++) {
-      const type = refillTypes[i];
-      const sv = USE_POOL
-        ? symbolPool.get(type, this.textures[type])
-        : new SymbolView(type, this.textures[type]);
+      const type = refillTypes[i] ?? keys[(Math.random() * keys.length) | 0];
+      const sv = USE_POOL ? symbolPool.get(type, this.textures[type]) : new SymbolView(type, this.textures[type]);
+
       sv.x = 0;
-      sv.y = -(i + 1) * SYMBOL_H;
+      sv.y = -(i + 1) * SYMBOL_H; // spawn above visible window
+      sv.visible = true;
+      sv.alpha = 1;
+      sv.scale.set(1);
+      sv.setHighlight(false);
       this.addChild(sv);
-      newOnTop.unshift(sv);
+
+      // put on top - add to beginning
+      newOnTop.unshift(sv); 
     }
 
+    // rebuild the order
     const newColumn = [...newOnTop, ...survivors];
-    this._symbols = new Array(this._rows);
 
+    // make sure fill any remaining slots with random symbols
+    while (newColumn.length < this._rows) {
+      const type = keys[(Math.random() * keys.length) | 0];
+      const sv = USE_POOL ? symbolPool.get(type, this.textures[type]) : new SymbolView(type, this.textures[type]);
+      sv.x = 0;
+      sv.y = -SYMBOL_H;
+      sv.visible = true;
+      sv.alpha = 1;
+      sv.scale.set(1);
+      this.addChild(sv);
+      newColumn.unshift(sv);
+    }
+
+    newColumn.length = this._rows;
+
+    // commit to internal slots and animate drop for every symbol to its row
+    this._symbols = new Array(this._rows);
     const drops: Promise<void>[] = [];
     newColumn.forEach((s, row) => {
       this._symbols[row] = s;
+      s.visible = true;
+      s.alpha = 1;
+      s.scale.set(1);
+      s.setHighlight(false);
       drops.push(s.dropTo(row * SYMBOL_H, DROP_MS));
     });
 
     await Promise.all(drops);
   }
+
 }

@@ -1,5 +1,4 @@
 // Server.ts
-
 import { COLS, ROWS, SYMBOL_TYPES, WILD } from './constants';
 import { findClusters } from './clusterUtils';
 
@@ -10,14 +9,14 @@ export default class Server {
 
   onData(cb:(data:SpinResponse)=>void){ this.listeners.push(cb); }
 
-  /** random weighted type (less K) */
+  // random weighted type - less K
   private randType(): string {
     const isWild = Math.random() < 0.1; // 10% chance
     if (isWild) return WILD;
     const nonWilds = SYMBOL_TYPES.filter(s => s !== WILD);
     return nonWilds[Math.floor(Math.random() * nonWilds.length)];
   }
-
+  // build a new 2D matrix of symbols to simulate slot outcome
   private randomMatrix(): string[][] {
     const m: string[][] = Array.from({length:ROWS},()=> Array(COLS).fill(''));
     for (let r = 0; r < ROWS; r++){
@@ -28,7 +27,7 @@ export default class Server {
     return m;
   }
 
-  /** Simulates the spec: min 2s spin on FE, server may be late. */
+  // Simulates the server late: min 2s spin on FE, server may be later
   requestSpinData(): void {
     const delay =
       100 + Math.random() * 1500 + (Math.random() > 0.8 ? 2000 : 0);
@@ -44,12 +43,13 @@ export default class Server {
       const payload: SpinResponse = {
         matrix,
         combine: combine.length ? combine : undefined,
-      };
+      }; // send result to all listeners
       this.listeners.forEach((cb) => cb(payload));
     }, delay);
   }
 
-  /** When FE has gaps, it asks for top-fill for each column (how many per column). Return array[col] = newTypesTopDown */
+  // When FE has gaps, FE asks for how many per column
+  // then return array[col] = newTypesTopDown with delay
   requestRefill(countPerCol:number[]): Promise<string[][]> {
     return new Promise(res=>{
       setTimeout(()=>{

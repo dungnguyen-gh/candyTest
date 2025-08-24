@@ -2,12 +2,11 @@
 import { Texture } from 'pixi.js';
 import { SymbolView } from './SymbolView';
 
-/**
- * Simple object pool for SymbolView.
- * Not bucketed by type — a pooled SymbolView is re-skinned on get().
- */
+
+// a pool of SymbolView is re-skinned on get().
+
 export class SymbolPool {
-  private stash: SymbolView[] = [];
+  private stash: SymbolView[] = []; // store used symbols
 
   get(type: string, texture: Texture): SymbolView {
     const sv = this.stash.pop() ?? new SymbolView(type, texture);
@@ -15,13 +14,13 @@ export class SymbolPool {
     // detach from previous parent if any
     if (sv.parent) sv.parent.removeChild(sv);
 
-    // re-skin & reset visual state
+    // re-skin and reset visual state
     sv.setTexture(type, texture);
     sv.visible = true;
     sv.alpha = 1;
     sv.scale.set(1);
     sv.setHighlight(false);
-    sv.y = 0; // caller will position
+    sv.y = 0;
 
     return sv;
   }
@@ -33,7 +32,7 @@ export class SymbolPool {
     sv.visible = false;
     sv.alpha = 0;
     sv.scale.set(1);
-    this.stash.push(sv);
+    this.stash.push(sv); // push back to the pool
   }
 
   size(): number { return this.stash.length; }

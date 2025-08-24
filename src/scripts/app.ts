@@ -20,12 +20,12 @@ export class MainApp {
       width: APP_WIDTH,
       height: APP_HEIGHT,
       antialias: true,
-      // resizeTo: window, // keep off so background covers only canvas
+      // resizeTo: window, 
     });
 
     document.body.appendChild(this.app.view as HTMLCanvasElement);
 
-    // add tween updates to the global ticker (for reel tweenTo)
+    // add tween updates to the global ticker - for reel tweenTo
     Ticker.shared.add(() => {
       updateTweens();
     });

@@ -7,12 +7,10 @@ export const easeOutCubic: Easing = (t)=>1-Math.pow(1-t,3);
 export const easeInCubic: Easing = (t)=>t*t*t;
 export const linear: Easing = (t)=>t;
 
-/** Small helper so we stop doing setTimeout everywhere */
+// Create Small helper for setTimeout
 export const delay = (ms:number) => new Promise<void>(res => setTimeout(res, ms));
 
-/* ------------------------------------------------------------------ */
-/* 1) Promise-style tween for ad-hoc animations (SymbolView, etc.)    */
-/* ------------------------------------------------------------------ */
+// Promise-style tween for ad-hoc animations (SymbolView, etc.)
 export function tween(
   update:(t:number)=>void,
   durationMs:number,
@@ -33,9 +31,7 @@ export function tween(
   });
 }
 
-/* ------------------------------------------------------------------ */
-/* 2) Property tween manager used by reels                            */
-/* ------------------------------------------------------------------ */
+// Property tween manager used by reels
 type Tween = {
   object:any;
   property:string;
