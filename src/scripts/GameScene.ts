@@ -1,8 +1,8 @@
-// GameScene.ts
 import { Application, Assets, Container, Sprite, Text, TextStyle, Texture } from 'pixi.js';
 import { APP_HEIGHT, APP_WIDTH, COLS, MIN_SPIN_MS, ROWS, SYMBOL_TYPES } from './constants';
-import Server from './Server';
+import Server, { SpinResponse } from './Server';
 import { Board } from './Board';
+import { Cluster } from './clusterUtils';
 
 export class GameScene extends Container {
   private server: Server;
@@ -88,23 +88,37 @@ export class GameScene extends Container {
     // actual stop handled by onServerSpin when server replies
   }
 
-  private async onServerSpin(data: { matrix: string[][], combine?: string[] }) {
+  // Helper to parse combine strings into Cluster[]
+  private parseServerClusters(combine?: string[]): Cluster[] {
+    if (!combine || !combine.length) return [];
+    return combine.map(str => {
+      const [type, cellsStr] = str.split(';');
+      const cells = cellsStr.split(',').map(idx => {
+        const index = parseInt(idx, 10);
+        const row = Math.floor(index / COLS);
+        const col = index % COLS;
+        return [row, col] as [number, number];
+      });
+      return { type, cells };
+    });
+  }
+
+  private async onServerSpin(data: SpinResponse) {
     await this.board.spinStop(data.matrix);
 
     // pause a bit after stop
     await new Promise(res => setTimeout(res, 1000));
 
-    // chain explosions and refills
-    await this.chainExplodeRefill();
+    // chain explosions and refills, using server clusters for first iteration
+    const initialClusters = this.parseServerClusters(data.combine);
+    await this.chainExplodeRefill(initialClusters);
 
     this.lockUI(false);
   }
 
-  private async chainExplodeRefill() {
-    while (true) {
-      const clusters = this.board.findClusters(4);
-      if (!clusters.length) break;
-
+  private async chainExplodeRefill(initialClusters?: Cluster[]) {
+    let clusters = initialClusters || this.board.findClusters(4);
+    while (clusters.length) {
       await this.board.explode(clusters);
 
       // pause before refill
@@ -114,7 +128,8 @@ export class GameScene extends Container {
       const refillCols = await this.server.requestRefill(missing);
 
       await this.board.dropAndRefill(refillCols);
-      // repeats until stable
+      // subsequent iterations use FE clustering since refills create new clusters
+      clusters = this.board.findClusters(4);
     }
   }
 }
